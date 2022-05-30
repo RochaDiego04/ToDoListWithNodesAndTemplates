@@ -139,11 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Nodo.cpp" />
+    <ClCompile Include="Parametros.cpp" />
     <ClCompile Include="ToDoListWithNodesAndTemplates.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Lista.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Nodo.h" />
+    <ClInclude Include="Parametros.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
