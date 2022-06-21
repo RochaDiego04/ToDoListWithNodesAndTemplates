@@ -1,24 +1,26 @@
 #pragma once
 #include <iostream>
 #include <cstdlib>
+#include <string>
+#include <stdio.h>
 
-#include "Lista.h"
-#include "Parametros.h"
+#include "Nodo.h"
 using namespace std;
 
 
 class Menu {
 public:
 	int option;
-	int numDeTarea;
+	int identificador;
 	string unaTarea;
-	string completado;
-	Lista listita;
-	Parametros* paramTarea;
+	Nodo* unaLista;
+
 	Menu();
 	void run();
 	void ShowMenuOptions();
 	void setOption();
 	void createList();
-	void ingresarTarea(int &numDeTarea, string &unaTarea, string &completado, Parametros*& paramTarea, Lista& listita);
+	void ingresarTarea(int identificador, string &unaTarea);
+	void showBuscarTarea();
+	int buscarTarea();
 };
